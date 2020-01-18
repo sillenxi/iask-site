@@ -4,7 +4,7 @@ git config --global user.name "Honye"
 git config --global user.email "hongye.jun@qq.com"
 git clone https://${GH_REF} .deploy_git
 cd .deploy_git
-git checkout gh_pages
+git checkout master
 cd ../
 mv .deploy_git/.git/ ./build/
 cd ./build/
