@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - master
+      - source
 
 jobs:
   build:
@@ -29,7 +29,7 @@ jobs:
 
       - name: Deploy
         env:
-          GH_REF: github.com/Honye/iask-site.git
+          GH_REF: github.com/sillenxi/iask-site.git
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           chmod +x ./deploy.sh

@@ -11,4 +11,4 @@ cd ./build/
 git add .
 git commit -m "CI built at `date +"%Y-%m-%d %H:%M:%S"`"
 # GitHub Pages
-git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" gh_pages:gh_pages
+git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
