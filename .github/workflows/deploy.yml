@@ -25,6 +25,7 @@ jobs:
 
       - name: Generate public files
         run: |
+          export PUBLIC_URL=/iask-site
           yarn build
 
       - name: Deploy
