@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route, NavLink, HashRouter } from 'react-router-dom'
+import { Route, NavLink } from 'react-router-dom'
 import Trainers from './Trainers'
 import Partners from './Partners'
 import Contact from './Contact'

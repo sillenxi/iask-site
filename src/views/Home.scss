@@ -118,8 +118,13 @@
   background-color: #fcfbfa;
 }
 
-.project-list div {
-  outline: none;
+.project-list {
+  div {
+    outline: none;
+  }
+  // .slick-arrow {
+  //   display: none !important;
+  // }
 }
 
 .project-item {
@@ -221,6 +226,10 @@
 
 .books-wrap {
   padding: 45px 0;
+  background-color: #FCFBFA;
+}
+
+.books-container {
   display: flex;
 }
 
@@ -277,8 +286,8 @@
 
 .video-wrap {
   position: relative;
-  width: 868px;
-  height: 361px;
+  width: 1200px;
+  height: 499px;
   margin: 0 auto;
 }
 
@@ -297,7 +306,7 @@
   }
   &__desc {
     position: absolute;
-    top: 108px;
+    top: 149px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -310,7 +319,7 @@
   &__slogan {
     font-size: 18px;
     letter-spacing: 20px;
-    margin-top: 8px;
+    margin-top:11px;
   }
   &__arrow {
     display: inline-block;
@@ -318,7 +327,7 @@
     height: 26px;
     background-image: url('../images/video_icon_arrow.svg');
     background-size: 100%;
-    margin-top: 36px;
+    margin-top: 48px;
     animation: upDown 1s ease-in-out infinite;
   }
 }
@@ -343,7 +352,7 @@
     background-image: url("../images/video_icon_play.svg");
     background-size: 100% 100%;
     cursor: pointer;
-    bottom: 30px;
+    bottom: 40px;
     left: 50%;
     transform: translate3d(-50%,0,0);
   }

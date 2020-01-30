@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.scss';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,7 +10,6 @@ import Footer from './views/Footer';
 import Home from './views/Home';
 import About from './views/About';
 import Services from './views/Services';
-import './App.scss';
 
 function App() {
   return (

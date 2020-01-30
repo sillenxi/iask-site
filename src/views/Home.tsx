@@ -110,6 +110,8 @@ function Home() {
             slidesToShow={1}
             slidesToScroll={1}
             speed={500}
+            nextArrow={<SlickArrow />}
+            prevArrow={<SlickArrow />}
             beforeChange={(current, next) => setSlideIndex(next)}
           >
           {
@@ -134,8 +136,8 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="block max-width">
-        <div className="block__head" data-content="LEARNING">学习资源</div>
+      <div className="block">
+        <div className="max-width block__head" data-content="LEARNING">学习资源</div>
         <div className="block__body">
           <div className="learning-sources">
             <div className="source-item">
@@ -158,17 +160,19 @@ function Home() {
             </div>
           </div>
           <div className="books-wrap">
-            <div className="company">爱问（上海）管理咨询有限公司是一家专业的管理咨询和培训公司，致力于通过教练技术帮助中国企业提升领导力、培养人才、达成目标。</div>
-            <div className="book-list">
-            {
-              books.map(book => (
-                <div className="book-item" key={book.id}>
-                  <img className="book-item__img" src={book.img} alt={book.name} />
-              <div className="book-item__name">{book.name}</div>
-                  <div className="book-item__author">{book.author} 著</div>
-                </div>
-              ))
-            }
+            <div className="max-width books-container">
+              <div className="company">爱问（上海）管理咨询有限公司是一家专业的管理咨询和培训公司，致力于通过教练技术帮助中国企业提升领导力、培养人才、达成目标。</div>
+              <div className="book-list">
+              {
+                books.map(book => (
+                  <div className="book-item" key={book.id}>
+                    <img className="book-item__img" src={book.img} alt={book.name} />
+                <div className="book-item__name">{book.name}</div>
+                    <div className="book-item__author">{book.author} 著</div>
+                  </div>
+                ))
+              }
+              </div>
             </div>
           </div>
         </div>
@@ -202,6 +206,12 @@ function Home() {
         </div>
       </div>
     </div>
+  )
+}
+
+function SlickArrow() {
+  return (
+    <div style={{display: 'none'}}></div>
   )
 }
 
