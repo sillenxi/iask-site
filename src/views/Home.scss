@@ -188,7 +188,7 @@
   &::-webkit-progress-value {
     background-color: #f47e14;
     border-radius: 3px;
-    animation: width .3s;
+    transition: width .3s;
   }
 }
 
