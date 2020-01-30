@@ -1,0 +1,22 @@
+.partners {
+  display: flex;
+  height: 480px;
+  &__nav {
+    width: 375px;
+    background-color: #eee;
+  }
+  &__content {
+
+  }
+}
+
+.partner-item {
+  display: inline-block;
+  width: 168px;
+  height: 120px;
+  text-align: center;
+  &__name {
+    color: #333;
+    font-size: 12px;
+  }
+}

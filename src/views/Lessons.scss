@@ -1,0 +1,59 @@
+.chapter-item {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0;
+  counter-reset: section;
+  counter-increment: chapter;
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+    .chapter-item__left {
+      text-align: center;
+    }
+  }
+  &__left {
+    width: 40%;
+    &-content {
+      display: inline-block;
+      text-align: left;
+    }
+  }
+  &__right {
+    width: 60%;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 52px;
+    color: #333;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 18px;
+      height: 3px;
+      background-color: #666;
+    }
+  }
+  &__sections {
+    margin-top: 24px;
+  }
+  &__section {
+    color: #666;
+    font-size: 12px;
+    counter-increment: section;
+    &::before {
+      content: counter(chapter) "." counter(section) "\00a0\00a0\00a0";
+    }
+    & + & {
+      margin-top: 20px;
+    }
+  }
+  &__cover {
+    display: block;
+    width: 100%;
+    height: 315px;
+    object-fit: cover;
+    background-color: #eee;
+  }
+}

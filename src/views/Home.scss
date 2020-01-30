@@ -34,6 +34,7 @@
     margin-bottom: 40px;
     &::before {
       content: attr(data-content);
+      text-transform: uppercase;
       position: absolute;
       font-size: 72px;
       font-weight: bold;

@@ -1,0 +1,74 @@
+.banner {
+  height: 37.5vw;
+  background-color: #f47e14;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/home_banner.png");
+  background-size: 100% 100%;
+  &__title {
+    font-size: 54px;
+    font-weight: 600;
+  }
+  &__desc {
+    font-size: 18px;
+    line-height: 2.1em;
+    text-align: center;
+    max-width: 846px;
+  }
+}
+
+.nav-menu {
+
+}
+
+.nav-menu-item {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 66px;
+  color: #807970;
+  position: relative;
+  &__txt {
+    display: block;
+    font-size: 14px;
+    line-height: 66px;
+    color: inherit;
+    text-decoration: none;
+    transform: all .3s;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      height: 5px;
+      background-color: #F47E14;
+      margin: 0 auto;
+      transition: width .2s;
+    }
+    &:hover,
+    &.is-active {
+      color: #333;
+      font-weight: 500;;
+    }
+    &.is-active {
+      &::after {
+        width: 30px;
+      }
+    }
+  }
+  & + & {
+    margin-left: 48px;
+  }
+}
+
+.company-intro {
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #807970;
+  text-align: center;
+}
