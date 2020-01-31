@@ -1,41 +1,41 @@
 .trainer-list {
-  max-width: 293px * 3;
+  max-width: 390px * 3;
   margin: 0 auto;
 }
 
 .trainer-item {
   display: inline-block;
-  width: 293px;
-  height: 210px;
+  width: 390px;
+  height: 280px;
   position: relative;
   &__name {
-    font-size: 14px;
-    color: 14px;
+    font-size: 18px;
+    color: #333;
     position: absolute;
-    top: 123px;
-    left: 30px;
+    top: 164px;
+    left: 40px;
   }
   &__position {
-    font-size: 12px;
+    font-size: 14px;
     color: #807970;
     position: absolute;
-    bottom: 45px;
-    left: 30px;
+    bottom: 60px;
+    left: 40px;
   }
   &__photo {
-    width: 131px;
-    height: 131px;
+    width: 175px;
+    height: 175px;
     background-color: #eee;
     position: absolute;
     top: 0;
     right: 0;
   }
   &__dot {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     background-color: #F47E14;
     position: absolute;
-    top: 118px;
-    right: 120px;
+    top: 157px;
+    right: 160px;
   }
 }

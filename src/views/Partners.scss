@@ -1,8 +1,8 @@
 .partners {
   display: flex;
-  height: 480px;
+  height: 600px;
   &__nav {
-    width: 375px;
+    width: 500px;
     background-color: #eee;
   }
   &__content {
@@ -12,11 +12,11 @@
 
 .partner-item {
   display: inline-block;
-  width: 168px;
-  height: 120px;
+  width: 224px;
+  height: 160px;
   text-align: center;
   &__name {
     color: #333;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
