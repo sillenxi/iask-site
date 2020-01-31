@@ -1,7 +1,7 @@
 .chapter-item {
   display: flex;
   flex-direction: row;
-  padding: 30px 0;
+  padding: 40px 0;
   counter-reset: section;
   counter-increment: chapter;
   &:nth-child(2n) {
@@ -11,18 +11,18 @@
     }
   }
   &__left {
-    width: 40%;
+    flex-grow: 1;
     &-content {
       display: inline-block;
       text-align: left;
     }
   }
   &__right {
-    width: 60%;
+    width: 640px;
   }
   &__title {
-    font-size: 18px;
-    line-height: 52px;
+    font-size: 24px;
+    line-height: 70px;
     color: #333;
     position: relative;
     &::after {
@@ -30,8 +30,8 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 18px;
-      height: 3px;
+      width: 24px;
+      height: 4px;
       background-color: #666;
     }
   }
@@ -40,7 +40,7 @@
   }
   &__section {
     color: #666;
-    font-size: 12px;
+    font-size: 16px;
     counter-increment: section;
     &::before {
       content: counter(chapter) "." counter(section) "\00a0\00a0\00a0";
@@ -52,7 +52,7 @@
   &__cover {
     display: block;
     width: 100%;
-    height: 315px;
+    height: 420px;
     object-fit: cover;
     background-color: #eee;
   }

@@ -4,7 +4,7 @@ import './index.scss'
 function Footer() {
   return (
     <footer className="footer-wrap">
-      <div className="footer max-width">
+      <div className="container mx-auto footer">
         <ul className="footer__nav">
           <li className="footer__nav-item"><a href="/">关于我们</a></li>
           <li className="footer__nav-item"><a href="/">产品服务</a></li>

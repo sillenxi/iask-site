@@ -4,8 +4,8 @@
 
 .footer {
   color: #fff;
-  font-size: 12px;
-  padding: 60px 0 30px;
+  font-size: 14px;
+  padding: 80px 0 38px;
   position: relative;
   &__nav {
     list-style-type: none;
@@ -31,22 +31,23 @@
     top: 60px;
     right: 0;
     &-item {
-      width: 90px;
-      height: 90px;
-      margin-left: 60px;
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      margin-left: 80px;
     }
   }
 }
 
 .copyright {
-  height: 45px;
+  height: 60px;
   background-color: #171716;
   color: rgba($color: #fff, $alpha: 0.4);
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   &__icp {
-    margin-left: 44px;
+    margin-left: 56px;
   }
 }

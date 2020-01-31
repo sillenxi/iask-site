@@ -3,7 +3,7 @@ import './Partners.scss'
 
 function Partners() {
   return (
-    <div className="max-width block">
+    <div className="container mx-auto block">
       <div className="block__head" data-content="client">尊贵客户</div>
       <div className="block__body">
         <div className="partners">

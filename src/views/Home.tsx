@@ -61,10 +61,10 @@ function Home() {
         <h2 className="banner__title">激发个人与组织的无限潜能</h2>
         <div className="banner__desc">爱问（上海）管理咨询有限公司是一家专业的管理咨询和培训公司，致力于通过教练技术帮助中国企业提升领导力、培养人才、达成目标。</div>
       </div>
-      <div className="block max-width">
+      <div className="block">
         <div className="block__head" data-content="SERVICE">产品服务</div>
         <div className="block__body">
-          <div className="service">
+          <div className="container mx-auto service">
             <div className="service__nav">
               <div className="service-nav-item">
                 <div className="service-nav-item__name">教练认证</div>
@@ -137,9 +137,9 @@ function Home() {
         </div>
       </div>
       <div className="block">
-        <div className="max-width block__head" data-content="LEARNING">学习资源</div>
+        <div className="block__head" data-content="LEARNING">学习资源</div>
         <div className="block__body">
-          <div className="learning-sources">
+          <div className="container mx-auto learning-sources">
             <div className="source-item">
               <div className="source-item__icon"
                 style={{backgroundImage: `url(${require('../images/source_publication.svg')})`}}
@@ -160,7 +160,7 @@ function Home() {
             </div>
           </div>
           <div className="books-wrap">
-            <div className="max-width books-container">
+            <div className="container mx-auto books-container">
               <div className="company">爱问（上海）管理咨询有限公司是一家专业的管理咨询和培训公司，致力于通过教练技术帮助中国企业提升领导力、培养人才、达成目标。</div>
               <div className="book-list">
               {
@@ -180,7 +180,7 @@ function Home() {
       <div className="block">
         <div className="block__head" data-content="STYLE">企业风采</div>
         <div className="block__body">
-          <figure className="video-wrap">
+          <figure className="container video-wrap">
             <div className="video__poster"></div>
             <div className="video__desc">
               <div className="video__name">行动教练</div>

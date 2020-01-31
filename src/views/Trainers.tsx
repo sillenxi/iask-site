@@ -15,7 +15,7 @@ function Trainers() {
   ])
 
   return (
-    <div className="max-width block">
+    <div className="container mx-auto block">
       <div className="block__head" data-content="coach">讲师教练</div>
       <div className="block__body">
         <div className="trainer-list">

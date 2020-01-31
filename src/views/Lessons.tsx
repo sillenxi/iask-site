@@ -48,7 +48,7 @@ function Lessons() {
 
   return (
     <div>
-      <div className="max-width block">
+      <div className="container mx-auto block">
         <div className="block__head" data-content="Training">培训课程</div>
         <div className="block__body">
         {
