@@ -89,30 +89,93 @@
     line-height: 60px;
     box-sizing: border-box;
     padding-left: 46px;
-    border-left: 8px solid #f47e14;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: 0;
+      width: 0;
+      background-color: #f47e14;
+      opacity: 0;
+      transition: all .3s;
+    }
   }
   &__arrow {
     width: 78px;
     height: 16px;
-    margin-left: 55px;
+    margin-left: 25px;
     margin-top: 25px;
     background: url("../images/service_arrow.svg");
     background-size: 100% 100%;
     opacity: 0;
-    transition: opacity .3s;
+    transition: opacity .3s, margin-left .3s;
   }
-  &:hover .service-nav-item__arrow {
+  &.is-active & {
+    &__name::before {
+      opacity: 1;
+      width: 8px;
+      height: 100%;
+    }
+    &__arrow {
+      opacity: 1;
+      margin-left: 55px;
+    }
+  }
+}
+
+.service-list {
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .6s;
+  &.is-active {
+    width: 100%;
     opacity: 1;
+  }
+  &.count-3 {
+    .service-item {
+      &:nth-child(2),
+      &:nth-child(3) {
+        height: 50%;
+      }
+    }
   }
 }
 
 .service-item {
   list-style: none;
   list-style-type: none;
-  flex-grow: 1;
-  min-width: 50%;
-  background: url("../images/service_coach.png");
+  float: left;
+  width: 50%;
+  height: 100%;
   background-size: cover;
+  position: relative;
+  &__content {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &__info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 40px;
+  }
+  &__name {
+    margin-bottom: 16px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  &__desc {
+    color: #fff;
+    font-size: 16px;
+  }
 }
 
 .project-wrap {

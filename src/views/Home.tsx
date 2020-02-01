@@ -3,8 +3,11 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './Home.scss'
+import classNames from 'classnames'
+import { serviceList } from '../data/services'
 
 function Home() {
+  const [currentServiceIdx, setCurrentServiceIdx] = useState(0)
 
   const projectList = [
     {
@@ -66,35 +69,39 @@ function Home() {
         <div className="block__body">
           <div className="container mx-auto service">
             <div className="service__nav">
-              <div className="service-nav-item">
-                <div className="service-nav-item__name">教练认证</div>
-                <div className="service-nav-item__arrow"></div>
-              </div>
-              <div className="service-nav-item">
-                <div className="service-nav-item__name">教练课程</div>
-                <div className="service-nav-item__arrow"></div>
-              </div>
-              <div className="service-nav-item">
-                <div className="service-nav-item__name">教练项目</div>
-                <div className="service-nav-item__arrow"></div>
-              </div>
-              <div className="service-nav-item">
-                <div className="service-nav-item__name">教练服务</div>
-                <div className="service-nav-item__arrow"></div>
-              </div>
+            {
+              serviceList.map((service, index) => (
+                <div className={classNames(['service-nav-item', { 'is-active': index === currentServiceIdx }])} key={index}
+                  onMouseEnter={() => setCurrentServiceIdx(index)}
+                >
+                <div className="service-nav-item__name">{service.name}</div>
+                  <div className="service-nav-item__arrow"></div>
+                </div>
+              ))
+            }
             </div>
-            <ul className="service__content">
-                <li className="service-item">
-                  <a href="/">
-                    <div className="service-item__info">教练认证</div>
-                  </a>
-                </li>
-                <li className="service-item">
-                  <a href="/">
-                    <div className="service-item__info">讲师认证</div>
-                  </a>
-                </li>
-              </ul>
+            <div className="service__content">
+            {
+              serviceList.map((service, sIndex) => (
+                <ul className={classNames(["service-list", { 'is-active': currentServiceIdx === sIndex }, `count-${service.items.length}`])} key={sIndex}>
+                {
+                  service.items.map((item, index) => (
+                    <li className="service-item" key={index}
+                      style={{ backgroundImage: `url(${item.cover})` }}
+                    >
+                      <a className="service-item__content" href="/">
+                        <div className="service-item__info">
+                        <div className="service-item__name">{item.name}</div>
+                          <div className="service-item__desc">{item.description}</div>
+                        </div>
+                      </a>
+                    </li>
+                  ))
+                }
+                </ul>
+              ))
+            }
+            </div>
           </div>
         </div>
       </div>
