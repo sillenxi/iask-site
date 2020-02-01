@@ -10,6 +10,7 @@ import Footer from './views/Footer';
 import Home from './views/Home';
 import About from './views/About';
 import Services from './views/Services';
+import Trends from './views/Trends';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" exact><Home /></Route>
           <Route path="/about"><About /></Route>
           <Route path="/services"><Services /></Route>
+          <Route path="/trends"><Trends /></Route>
         </Switch>
         <Footer />
       </div>

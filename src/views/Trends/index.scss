@@ -1,0 +1,51 @@
+.acclaim-item {
+  display: inline-block;
+  width: 560px;
+  height: 374px;
+  padding: 40px 47px;
+  background-color: #FCFBFA;
+  margin-bottom: 50px;
+  &:nth-child(2n) {
+    margin-left: 50px;
+  }
+  &__man {
+    font-size: 24px;
+    color: #333;
+  }
+  &__position {
+    margin-left: 12px;
+    font-size: 14px;
+    color: #807970;
+    &::before {
+      content: "/";
+      margin-right: 6px;
+    }
+  }
+  &__comment {
+    margin-top: 61px;
+    font-size: 14px;
+    color: #807970;
+    position: relative;
+    z-index: 1;
+    &::before,
+    &::after {
+      font-family: PingFangSC-Regular,PingFang SC;
+      position: absolute;
+      z-index: -1;
+      font-size: 120px;
+      line-height: 1;
+      font-weight: bold;
+      color: #E6E4E3;
+    }
+    &::before {
+      content: "“";
+      top: -30px;
+      left: -40px;
+    }
+    &::after {
+      content: "”";
+      bottom: -80px;
+      right: -30px;
+    }
+  }
+}
