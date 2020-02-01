@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "45dda61f936effe9510920e42ad63f58",
+    "revision": "f340931779227d957e5c5ae85037c3ce",
     "url": "/iask-site/index.html"
   },
   {
-    "revision": "e4ea5879884315cfd5e9",
+    "revision": "15cca95f9ed31dd2d4ab",
     "url": "/iask-site/static/css/2.55c93860.chunk.css"
   },
   {
-    "revision": "c3c2b569e4383652b4ef",
-    "url": "/iask-site/static/css/main.80bf1474.chunk.css"
+    "revision": "3b67ca7757d5c5ce173e",
+    "url": "/iask-site/static/css/main.7db09f38.chunk.css"
   },
   {
-    "revision": "e4ea5879884315cfd5e9",
-    "url": "/iask-site/static/js/2.e88700bf.chunk.js"
+    "revision": "15cca95f9ed31dd2d4ab",
+    "url": "/iask-site/static/js/2.928aaf31.chunk.js"
   },
   {
     "revision": "fb08aec389ff1d0e3b63dd26ad5ac153",
-    "url": "/iask-site/static/js/2.e88700bf.chunk.js.LICENSE"
+    "url": "/iask-site/static/js/2.928aaf31.chunk.js.LICENSE"
   },
   {
-    "revision": "c3c2b569e4383652b4ef",
-    "url": "/iask-site/static/js/main.a66d94dc.chunk.js"
+    "revision": "3b67ca7757d5c5ce173e",
+    "url": "/iask-site/static/js/main.b41605a2.chunk.js"
   },
   {
     "revision": "a662a31562b978db611d",
@@ -60,12 +60,44 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iask-site/static/media/qrcode_demo.801b20ce.png"
   },
   {
+    "revision": "6d37faff99270a234e16523eebd7703b",
+    "url": "/iask-site/static/media/service_advanced.6d37faff.png"
+  },
+  {
     "revision": "5f5054bf1d9da6e821adeccd8c3c35ff",
     "url": "/iask-site/static/media/service_arrow.5f5054bf.svg"
   },
   {
+    "revision": "1e60187e046b4315c4f51cc83200aa29",
+    "url": "/iask-site/static/media/service_business.1e60187e.png"
+  },
+  {
     "revision": "85b902ba8ab6aa544250ee0f8cb7d9d4",
     "url": "/iask-site/static/media/service_coach.85b902ba.png"
+  },
+  {
+    "revision": "08a0b88ba109362eb78554f60d59d289",
+    "url": "/iask-site/static/media/service_industry.08a0b88b.png"
+  },
+  {
+    "revision": "fab5c87202f64fb0ab88a3cb48795715",
+    "url": "/iask-site/static/media/service_intelligence.fab5c872.png"
+  },
+  {
+    "revision": "299d4e9f36ba2aee165770126b3e54fe",
+    "url": "/iask-site/static/media/service_lecturer.299d4e9f.png"
+  },
+  {
+    "revision": "ee37f89fa4cd828dc8e8f040b5412824",
+    "url": "/iask-site/static/media/service_one_to_one.ee37f89f.png"
+  },
+  {
+    "revision": "b20794de10a64684eeedbc83cf738c05",
+    "url": "/iask-site/static/media/service_roadmap.b20794de.png"
+  },
+  {
+    "revision": "e55974bcadb8617805ba1659a04a475a",
+    "url": "/iask-site/static/media/service_talent.e55974bc.png"
   },
   {
     "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
