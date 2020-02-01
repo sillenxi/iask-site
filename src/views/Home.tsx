@@ -5,39 +5,25 @@ import 'slick-carousel/slick/slick-theme.css'
 import './Home.scss'
 import classNames from 'classnames'
 import { serviceList } from '../data/services'
+import { projectList } from '../data/projects'
 
 function Home() {
   const [currentServiceIdx, setCurrentServiceIdx] = useState(0)
 
-  const projectList = [
-    {
-      id: 1,
-      name: '领导力提升项目',
-      desc: '集行动学习，教练技术，复盘技术等高端学习方法论为一身，融合案例教学，微课开发，学习设计等先进方法论为一体，帮企业解决实际问题，支持管理沉淀，提升培训影响力，最终解决业务问题，促进公司发展。',
-      img: require('../images/project_demo.png'),
-    },
-    {
-      id: 2,
-      name: '领导力提升项目',
-      desc: '集行动学习，教练技术，复盘技术等高端学习方法论为一身，融合案例教学，微课开发，学习设计等先进方法论为一体，帮企业解决实际问题，支持管理沉淀，提升培训影响力，最终解决业务问题，促进公司发展。',
-      img: require('../images/project_demo.png'),
-    },
-    {
-      id: 3,
-      name: '领导力提升项目',
-      desc: '集行动学习，教练技术，复盘技术等高端学习方法论为一身，融合案例教学，微课开发，学习设计等先进方法论为一体，帮企业解决实际问题，支持管理沉淀，提升培训影响力，最终解决业务问题，促进公司发展。',
-      img: require('../images/project_demo.png'),
-    },
-  ]
-
   const [slideIndex, setSlideIndex] = useState(0)
   const sliderEl = useRef<Slider>(null)
+
+  const handleSliderChange = (current: number, next: number) => {
+    console.log('slider change', current, next)
+    setSlideIndex(next)
+  }
 
   useEffect(() => {
     const slider = sliderEl.current
     if (slider) {
       slider.slickGoTo(slideIndex)
     }
+    console.log('next index', slideIndex)
   }, [slideIndex])
 
   const books = [
@@ -117,19 +103,22 @@ function Home() {
             slidesToShow={1}
             slidesToScroll={1}
             speed={500}
-            nextArrow={<SlickArrow />}
-            prevArrow={<SlickArrow />}
-            beforeChange={(current, next) => setSlideIndex(next)}
+            variableWidth={true}
+            arrows={false}
+            // beforeChange={(current, next) => setSlideIndex(next)}
+            beforeChange={handleSliderChange}
           >
           {
-            projectList.map(item => (
+            projectList.map((item, index) => (
               <div key={item.id}>
-                <div className="project-item">
+                <div className={classNames(["project-item", { 'is-last': (index === slideIndex - 1) || (index === slideIndex - 1 + projectList.length) }])}>
                   <img className="project-item__img" src={item.img} alt={item.name} />
-                  <div className="project-item__info">
-                    <div className="project-item__name">{item.name}</div>
-                    <div className="project-item__desc">{item.desc}</div>
-                    <div className="project-item__arrow"></div>
+                  <div className="project-item__right">
+                    <div className="project-item__info">
+                      <div className="project-item__name">{item.name}</div>
+                      <div className="project-item__desc">{item.desc}</div>
+                      <div className="project-item__arrow"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -213,12 +202,6 @@ function Home() {
         </div>
       </div>
     </div>
-  )
-}
-
-function SlickArrow() {
-  return (
-    <div style={{display: 'none'}}></div>
   )
 }
 
