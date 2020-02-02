@@ -1,11 +1,32 @@
-import React from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { Route, NavLink } from 'react-router-dom'
+import Slider from 'react-slick'
 import Trainers from './Trainers'
 import Partners from './Partners'
 import Contact from './Contact'
 import './About.scss'
 
 function About() {
+  const cultureList = [
+    {
+      head: '愿景',
+      title: '成为全球领先的智能化教练服务平台',
+      description: '人工智能时代已经来临，爱问希望让所有企业管理者的智慧能够在一个平台上最大化的共享，任何管理问题都可以在爱问的平台上找到答案。',
+      cover: require('../images/home_banner.png')
+    }
+  ]
+
+  const sliderCultureOneRef = useRef<Slider>(null)
+  const sliderCultureTwoRef = useRef<Slider>(null)
+  const [slideIndex, setSlideIndex] = useState(0)
+
+  useEffect(() => {
+    const sliderOne = sliderCultureOneRef.current
+    sliderOne && sliderOne.slickGoTo(slideIndex)
+    const sliderTwo = sliderCultureTwoRef.current
+    sliderTwo && sliderTwo.slickGoTo(slideIndex)
+  }, [slideIndex])
+
   return (
     <div>
       <div className="banner">
@@ -42,12 +63,50 @@ function About() {
         </div>
         <div id="culture" className="container mx-auto block">
           <div className="block__head" data-content="culture">企业文化</div>
-          <div className="block__body"></div>
+          <div className="block__body">
+            <div className="culture-wrap">
+              <Slider className="culture__vision"
+                ref={sliderCultureOneRef}
+                arrows={false}
+                fade={true}
+              >
+              {
+                cultureList.map((culture, index) => (
+                  <div className="vision" key={index}>
+                    <div className="vision__head">{culture.head}</div>
+                    <div className="vision__title">{culture.title}</div>
+                    <div className="vision__desc">{culture.description}</div>
+                  </div>
+                ))
+              }
+              </Slider>
+              <div className="culture__carousel">
+                <Slider
+                  ref={sliderCultureTwoRef}
+                  arrows={false}
+                  beforeChange={(current, next) => setSlideIndex(next)}
+                >
+                {
+                  cultureList.map((culture, index) => (
+                    <div className="vision__cover-wrap" key={index}>
+                      <img className="vision__cover" src={culture.cover} alt={culture.head} />
+                    </div>
+                  ))
+                }
+                </Slider>
+                <div className="slider-paging">
+                  <div className="slider-arrow slider-arrow--last" onClick={() => setSlideIndex(slideIndex - 1)}></div>
+                  <progress className="slider-progress" max={cultureList.length} value={(slideIndex + 1) % cultureList.length || cultureList.length}></progress>
+                  <div className="slider-arrow slider-arrow--next" onClick={() => setSlideIndex(slideIndex + 1)}></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div id="style" className="container mx-auto block">
           <div className="block__head" data-content="Style">企业风采</div>
           <div className="block__body">
-
+            
           </div>
         </div>
       </Route>
