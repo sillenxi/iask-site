@@ -105,14 +105,16 @@ function Home() {
             speed={500}
             variableWidth={true}
             arrows={false}
-            // beforeChange={(current, next) => setSlideIndex(next)}
+            draggable={false}
             beforeChange={handleSliderChange}
           >
           {
             projectList.map((item, index) => (
               <div key={item.id}>
                 <div className={classNames(["project-item", { 'is-last': (index === slideIndex - 1) || (index === slideIndex - 1 + projectList.length) }])}>
-                  <img className="project-item__img" src={item.img} alt={item.name} />
+                  <div className="project-item__img">
+                    <img src={item.img} alt={item.name} />
+                  </div>
                   <div className="project-item__right">
                     <div className="project-item__info">
                       <div className="project-item__name">{item.name}</div>

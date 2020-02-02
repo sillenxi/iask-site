@@ -196,16 +196,23 @@
   width: 970px;
   height: 400px;
   display: flex;
+  cursor: pointer;
   position: relative;
   &__img {
     width: 470px;
     height: 100%;
+    overflow: hidden;
     position: absolute;
     z-index: 2;
     top: 0;
     bottom: 0;
     left: 0;
     transition: all 1s ease-out;
+    & > img {
+      width: 100%;
+      height: 100%;
+      transition: transform 3s;
+    }
   }
   &__right {
     width: 500px;
@@ -250,6 +257,11 @@
     }
     &__right {
       left: 0;
+    }
+  }
+  &:hover & {
+    &__img > img {
+      transform: scale(1.1);
     }
   }
 }

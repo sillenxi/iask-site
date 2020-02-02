@@ -11,6 +11,7 @@ import Home from './views/Home';
 import About from './views/About';
 import Services from './views/Services';
 import Trends from './views/Trends';
+import NotFound from './views/404';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/about"><About /></Route>
           <Route path="/services"><Services /></Route>
           <Route path="/trends"><Trends /></Route>
+          <Route><NotFound /></Route>
         </Switch>
         <Footer />
       </div>
