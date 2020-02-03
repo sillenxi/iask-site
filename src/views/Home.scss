@@ -235,6 +235,7 @@
     color: #333;
   }
   &__desc {
+    text-align: justify;
     font-size: 14px;
     color: #807970;
     margin-top: 36px;
@@ -247,9 +248,6 @@
     position: absolute;
     left: 64px;
     bottom: 60px;
-  }
-  &.is-last {
-    flex-direction: row-reverse;
   }
   &.is-last & {
     &__img {

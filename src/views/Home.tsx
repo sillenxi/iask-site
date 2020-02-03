@@ -98,11 +98,7 @@ function Home() {
             className="project-list"
             ref={sliderEl}
             centerMode={true}
-            infinite={true}
-            centerPadding="280px"
-            slidesToShow={1}
-            slidesToScroll={1}
-            speed={500}
+            centerPadding="0px"
             variableWidth={true}
             arrows={false}
             draggable={false}
