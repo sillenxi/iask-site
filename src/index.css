@@ -1,9 +1,11 @@
+/* purgecss start ignore */
 @tailwind base;
 @tailwind components;
+/* purgecss end ignore */
 @tailwind utilities;
+@tailwind screens;
 
 html {
-  font-size: 19.2px;
   line-height: 1.5;
   color: #333;
 }

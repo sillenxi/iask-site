@@ -49,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.6",
     "@types/lodash": "^4.14.149",
     "autoprefixer": "^9.7.4",
     "postcss-pxtorem": "^4.0.1",
