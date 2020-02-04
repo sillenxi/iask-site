@@ -1,15 +1,18 @@
+@import '../styles/variables.scss';
+
 .banner {
   height: 37.5vw;
   background-color: #f47e14;
   color: #fff;
   display: flex;
+  padding-top: $header-height;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: url("../images/home_banner.png");
   background-size: 100% 100%;
   &__title {
-    font-size: 54px;
+    // font-size: 54px;
     font-weight: 600;
   }
   &__desc {

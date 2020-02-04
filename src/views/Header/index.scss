@@ -1,9 +1,11 @@
+@import '../../styles/variables.scss';
+
 .app-logo {
   h1 {
     display: block;
     width: 163px;
-    height: 72px;
-    line-height: 72px;
+    height: $header-height;
+    line-height: $header-height;
     font-size: 0;
     background: url('../../logo.svg') no-repeat 0 0;
     background-size: 100% 49px;
@@ -28,9 +30,8 @@
 
 .header {
   &-wrap {
-    height: 72px;
+    height: $header-height;
     display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -46,9 +47,9 @@
     list-style: none;
     float: left;
     font-size: 16px;
-    height: 72px;
-    line-height: 72px;
-    margin-left: 86px;
+    height: $header-height;
+    line-height: $header-height;
+    // margin-left: 86px;
     a {
       display: block;
       height: 100%;
