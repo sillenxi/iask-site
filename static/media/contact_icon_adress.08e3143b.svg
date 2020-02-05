@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="48px" viewBox="0 0 49 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icon_contact_adress_bor</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="关于我们" transform="translate(-1340.000000, -4685.000000)">
+            <g id="联系我们" transform="translate(-2.000000, 4403.000000)">
+                <g id="Repeat-Group" transform="translate(377.000000, 242.000000)">
+                    <g id="template/card/contact" transform="translate(810.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g transform="translate(63.000000, 40.000000)">
+                                <g id="Group" transform="translate(92.500000, 0.000000)">
+                                    <g id="icon/contact/phone">
+                                        <g id="icon/contact/adress">
+                                            <g id="icon/contact/adress_bor">
+                                                <path d="M20.1767709,9.81318629 C21.5997022,9.27278322 22.941248,9 24.2009303,9 C30.3860057,9 35.4,14.0087181 35.4,20.1872851 C35.4,22.487091 34.6904679,24.7310203 33.3680107,26.6135545 L25.3766555,37.9892524 C24.9209817,38.6379043 24.025195,38.7947326 23.3758599,38.3395383 C23.2395289,38.2439681 23.1208759,38.12544 23.025205,37.9892524 L15.0207044,26.594842 C11.4892324,21.5677902 12.7059324,14.6327484 17.7382798,11.1049927 C18.4943139,10.5750007 19.3134396,10.1410636 20.1767709,9.81318629 Z M20.6871973,11.154359 C19.9352636,11.4399296 19.2218315,11.8178748 18.5633502,12.2794807 C14.1803379,15.3520422 13.1206315,21.3922399 16.1964297,25.7706398 L23.9071011,36.7467843 C24.0210999,36.9090617 24.245066,36.9481992 24.4073434,36.8342004 C24.4413165,36.8103344 24.4708935,36.7807575 24.4947594,36.7467843 L32.1922838,25.7893547 L32.1922838,25.7893547 C33.3451291,24.1482651 33.9636605,22.1921297 33.9636605,20.1872851 C33.9636605,14.8011518 29.5927373,10.434828 24.2009303,10.434828 C23.1258753,10.434828 21.9547903,10.6729506 20.6871973,11.154359 Z" id="Rectangle" fill="currentColor" fill-rule="nonzero"></path>
+                                                <circle id="Oval" stroke="currentColor" stroke-width="1.43633945" fill-rule="nonzero" cx="24.2" cy="21.4" r="4.4"></circle>
+                                                <g id="empty">
+                                                    <rect x="0" y="0" width="48" height="48"></rect>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

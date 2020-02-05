@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b66615a541ad1683a845c33c4975b464",
+    "revision": "f1ba3c98c4a30acc74ae82375a1be06f",
     "url": "/iask-site/index.html"
   },
   {
-    "revision": "79eada3527d0ac4473b8",
+    "revision": "9106523c142e8fab4988",
     "url": "/iask-site/static/css/2.fe245e99.chunk.css"
   },
   {
-    "revision": "eaf7a0fd4d9635ffc5cb",
-    "url": "/iask-site/static/css/main.340c8874.chunk.css"
+    "revision": "2bd6a69170224ddad56e",
+    "url": "/iask-site/static/css/main.36fc5311.chunk.css"
   },
   {
-    "revision": "79eada3527d0ac4473b8",
-    "url": "/iask-site/static/js/2.fdc3fdd1.chunk.js"
+    "revision": "9106523c142e8fab4988",
+    "url": "/iask-site/static/js/2.922ebebb.chunk.js"
   },
   {
     "revision": "86afaa925e0f432774bf95b19b6933fb",
-    "url": "/iask-site/static/js/2.fdc3fdd1.chunk.js.LICENSE"
+    "url": "/iask-site/static/js/2.922ebebb.chunk.js.LICENSE"
   },
   {
-    "revision": "eaf7a0fd4d9635ffc5cb",
-    "url": "/iask-site/static/js/main.dc47b688.chunk.js"
+    "revision": "2bd6a69170224ddad56e",
+    "url": "/iask-site/static/js/main.0f1fa42c.chunk.js"
   },
   {
     "revision": "a662a31562b978db611d",
@@ -32,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iask-site/static/media/book_demo.fce8d1ea.png"
   },
   {
-    "revision": "d9a00430f28caa50a52d3e449d5c0486",
-    "url": "/iask-site/static/media/contact_icon_adress.d9a00430.svg"
+    "revision": "08e3143b48ea0215acfda274b690a6cc",
+    "url": "/iask-site/static/media/contact_icon_adress.08e3143b.svg"
   },
   {
-    "revision": "99162b663da960d8dd419814acee76d2",
-    "url": "/iask-site/static/media/contact_icon_email.99162b66.svg"
+    "revision": "d90c76d5d192c39be8246893fe1f1c22",
+    "url": "/iask-site/static/media/contact_icon_email.d90c76d5.svg"
   },
   {
-    "revision": "b0df836fabdd51fb6d5707bd516773cf",
-    "url": "/iask-site/static/media/contact_icon_phone.b0df836f.svg"
+    "revision": "089b727fa6f6c758b6ec13d70c75968d",
+    "url": "/iask-site/static/media/contact_icon_phone.089b727f.svg"
   },
   {
     "revision": "5b0bf5b10c4cdb8c0bd39bd1c448e823",
@@ -74,6 +74,70 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "44f64ecb3d3d9115f3f105acfa7029d7",
     "url": "/iask-site/static/media/logo.44f64ecb.svg"
+  },
+  {
+    "revision": "330f9174f2c83ef649e6b926218f7d15",
+    "url": "/iask-site/static/media/man_caiming.330f9174.png"
+  },
+  {
+    "revision": "2f5d8ec18561a201221eff1c1947a987",
+    "url": "/iask-site/static/media/man_daiwei.2f5d8ec1.png"
+  },
+  {
+    "revision": "9ec86c0b1c9f575d3a7dfb805c7b4350",
+    "url": "/iask-site/static/media/man_gaoyudong.9ec86c0b.png"
+  },
+  {
+    "revision": "e8c96a7b9a2e55523cf12ed755217373",
+    "url": "/iask-site/static/media/man_jinlvyan.e8c96a7b.png"
+  },
+  {
+    "revision": "18038c37315feb26515f7bdf672cbe05",
+    "url": "/iask-site/static/media/man_jiyixiang.18038c37.png"
+  },
+  {
+    "revision": "17181fd665630d1128f4076bc86141c3",
+    "url": "/iask-site/static/media/man_pengxunzhi.17181fd6.png"
+  },
+  {
+    "revision": "0195dc05ae797beb64c9e8be50f4dd9b",
+    "url": "/iask-site/static/media/man_raoluo.0195dc05.png"
+  },
+  {
+    "revision": "75c5b8133ebde90ee36c1476add7e324",
+    "url": "/iask-site/static/media/man_songcheng.75c5b813.png"
+  },
+  {
+    "revision": "5947c5fc0bd71f0a4de33b47a9ace58a",
+    "url": "/iask-site/static/media/man_wangfang.5947c5fc.png"
+  },
+  {
+    "revision": "fbaffedb1ec4f9853625b5787df1a1ab",
+    "url": "/iask-site/static/media/man_wujingyan.fbaffedb.png"
+  },
+  {
+    "revision": "7f0147bf85826d93f8c91db455cdf326",
+    "url": "/iask-site/static/media/man_xiaoguang.7f0147bf.png"
+  },
+  {
+    "revision": "43bda92b8af7e59edb8039b99c05d8a8",
+    "url": "/iask-site/static/media/man_xuexiaofeng.43bda92b.png"
+  },
+  {
+    "revision": "75d1caaf8fea86c5ab7f2f22e0828007",
+    "url": "/iask-site/static/media/man_xuhua.75d1caaf.png"
+  },
+  {
+    "revision": "038e3a594a04af55472934324cb008ba",
+    "url": "/iask-site/static/media/man_zhulili.038e3a59.png"
+  },
+  {
+    "revision": "bf66bc5400f0bd3457d8e89015af8eb5",
+    "url": "/iask-site/static/media/man_zhusha.bf66bc54.png"
+  },
+  {
+    "revision": "57c2216b2c9b6c9cb8bb6e99edb961d3",
+    "url": "/iask-site/static/media/partner_gjdw.57c2216b.png"
   },
   {
     "revision": "08f4f821ed150510ba48f71f77fd59b5",
