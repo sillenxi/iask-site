@@ -59,6 +59,23 @@ function About() {
             <p className="company-intro">爱问（上海）管理咨询有限公司成立于2004年，15年专注于组织人才培养与发展领域<br />
   形成了助力企业人才战略发展的差异化优势，爱问公司格守“专注，诚信，热爱”的价值观，践行“专注行为转变，激发组织潜能”的使命<br />
   以全球前瞻的理念、专业一流的团队为企业提供体系咨询、面授培训、学习项目等形式的体化人才发展解决方案</p>
+            <div className="count-list">
+              <div className="count-item">
+                <div className="count-item__num">2000+</div>
+                <div className="count-item__title">内训、公益论坛、峰会</div>
+                <div className="count-item__desc">参与2000余场内训、公益论坛、峰会</div>
+              </div>
+              <div className="count-item">
+                <div className="count-item__num">1000+</div>
+                <div className="count-item__title">企业客户</div>
+                <div className="count-item__desc">专注教练10余年，服务了1000家企业客户</div>
+              </div>
+              <div className="count-item">
+                <div className="count-item__num">300+</div>
+                <div className="count-item__title">认证讲师</div>
+                <div className="count-item__desc">独创行动教练双证班，培养认证讲师300多位</div>
+              </div>
+            </div>
           </div>
         </div>
         <div id="culture" className="container mx-auto block">
@@ -103,12 +120,9 @@ function About() {
             </div>
           </div>
         </div>
-        <div id="style" className="container mx-auto block">
-          <div className="block__head" data-content="Style">企业风采</div>
-          <div className="block__body">
-            
-          </div>
-        </div>
+        <Trainers />
+        <Partners />
+        <Contact />
       </Route>
       <Route path="/about/trainers"><Trainers /></Route>
       <Route path="/about/partners"><Partners /></Route>

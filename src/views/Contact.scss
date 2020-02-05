@@ -10,7 +10,34 @@
     display: inline-block;
     width: 33.33%;
     text-align: center;
-    padding: 30px 0 28px;
+    padding: 40px 0 36px;
+    border: 1px solid #ccc;
+    margin-right: 40px;
+    width: calc((100% - 40px * 2) / 3);
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      .way {
+        &__icon {
+          background-color: #F47E14;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-way {
+    &-item {
+      margin-right: 0;
+      width: 33.33%;
+      border-right-width: 0;
+    }
+    &:last-child {
+      border-right-width: 1px;
+    }
   }
 }
 
@@ -22,6 +49,7 @@
     height: 48px;
     border-radius: 24px;
     border: 1px solid #F47E14;
+    color: #F47E14;
   }
   &__name {
     font-size: 18px;

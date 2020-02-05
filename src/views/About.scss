@@ -50,6 +50,32 @@
   text-align: center;
 }
 
+.count-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.count-item {
+  display: inline-block;
+  text-align: center;
+  padding: 28px 0 37px;
+  &__num {
+    font-size: 60px;
+    font-weight: 600;
+    color: #F47E14;
+  }
+  &__title {
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  &__desc {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #807970;
+  }
+}
+
 .culture {
   &-wrap {
     text-align: right;

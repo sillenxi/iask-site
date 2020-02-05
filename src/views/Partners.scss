@@ -1,22 +1,20 @@
 .partners {
   display: flex;
-  height: 600px;
-  &__nav {
-    width: 500px;
-    background-color: #eee;
-  }
-  &__content {
-
-  }
+  flex-wrap: wrap;
+  margin-bottom: -40px;
 }
 
 .partner-item {
   display: inline-block;
-  width: 224px;
-  height: 160px;
-  text-align: center;
-  &__name {
-    color: #333;
-    font-size: 14px;
+  width: 210px;
+  height: 120px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  &:nth-child(5n) {
+    margin-right: 0;
+  }
+  img {
+    display: block;
+    width: 100%;
   }
 }
