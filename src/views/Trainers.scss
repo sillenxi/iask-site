@@ -1,12 +1,17 @@
 .trainer-list {
   max-width: 293px * 4;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .trainer-item {
   display: inline-block;
+  cursor: pointer;
   width: 293px;
   height: 240px;
+  background-color: #FCFBFA;
+  transition: background-color .3s;
   position: relative;
   &__name {
     font-size: 18px;
@@ -40,5 +45,15 @@
     position: absolute;
     top: 120px - 12px;
     right: 120px - 12px;
+    transition: all .3s;
+  }
+  &:hover {
+    background-color: #F2F3F5;
+    .trainer-item {
+      &__dot {
+        top: 120px - 24px;
+        right: 120px - 24px;
+      }
+    }
   }
 }

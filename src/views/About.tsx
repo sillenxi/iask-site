@@ -5,17 +5,9 @@ import Trainers from './Trainers'
 import Partners from './Partners'
 import Contact from './Contact'
 import './About.scss'
+import { cultures as cultureList } from '../data/about'
 
 function About() {
-  const cultureList = [
-    {
-      head: '愿景',
-      title: '成为全球领先的智能化教练服务平台',
-      description: '人工智能时代已经来临，爱问希望让所有企业管理者的智慧能够在一个平台上最大化的共享，任何管理问题都可以在爱问的平台上找到答案。',
-      cover: require('../images/home_banner.png')
-    }
-  ]
-
   const sliderCultureOneRef = useRef<Slider>(null)
   const sliderCultureTwoRef = useRef<Slider>(null)
   const [slideIndex, setSlideIndex] = useState(0)
@@ -29,9 +21,9 @@ function About() {
 
   return (
     <div>
-      <div className="banner">
-        <h2 className="banner__title">关于我们</h2>
-        <div className="banner__desc">爱问（上海）管理咨询有限公司是一家专业的管理咨询和培训公司，致力于通过教练技术帮助中国企业提升领导力、培养人才、达成目标。</div>
+      <div className="banner banner-about">
+        <h2 className="text-4xl md:text-5xl banner__title">关于我们</h2>
+        <div className="hidden md:block banner__desc">爱问（上海）管理咨询有限公司是一家专业的管理咨询和培训公司，致力于通过教练技术帮助中国企业提升领导力、培养人才、达成目标。</div>
       </div>
       <div className="nav-menu-wrap">
         <nav className="container mx-auto nav-menu">
@@ -86,6 +78,7 @@ function About() {
                 ref={sliderCultureOneRef}
                 arrows={false}
                 fade={true}
+                adaptiveHeight={false}
               >
               {
                 cultureList.map((culture, index) => (

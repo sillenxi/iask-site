@@ -1,3 +1,7 @@
+.banner-about {
+  background-image: url("../images/banner_about.png");
+}
+
 .nav-menu-wrap {
   background-color: #FCFBFA;
 }
@@ -60,13 +64,13 @@
   text-align: center;
   padding: 28px 0 37px;
   &__num {
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 600;
     color: #F47E14;
   }
   &__title {
     margin-top: 16px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
   }
   &__desc {
@@ -88,7 +92,6 @@
     left: 0;
     bottom: 0;
     width: 528px;
-    height: 286px;
     box-shadow: 0 4px 16px 0 rgba(0,0,0,0.1);
   }
   &__carousel {
@@ -103,7 +106,6 @@
 
 .vision {
   width: 528px;
-  height: 286px;
   background-color: #FFFFFF;
   box-sizing: border-box;
   padding: 55px 60px;

@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import TrainerModal from './TrainerModal'
 import './Trainers.scss'
 import { trainers } from '../data/about'
 
 function Trainers() {
+  const [activeTrainer, setActiveTrainer] = useState<typeof trainers[0]>()
   return (
     <div className="container mx-auto block">
       <div className="block__head" data-content="coach">讲师教练</div>
@@ -10,7 +12,7 @@ function Trainers() {
         <div className="trainer-list">
         {
           trainers.map((trainer, index) => (
-            <div className="trainer-item" key={index}>
+            <div className="trainer-item" key={index} onClick={() => setActiveTrainer(trainer)}>
               <div className="trainer-item__name">{trainer.name}</div>
               <div className="trainer-item__position">
               {
@@ -24,6 +26,7 @@ function Trainers() {
         }
         </div>
       </div>
+      { activeTrainer && <TrainerModal data={activeTrainer} onMaskClick={() => setActiveTrainer(undefined)} /> }
     </div>
   )
 }
