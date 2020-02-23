@@ -6,6 +6,11 @@
   background-color: #FCFBFA;
 }
 
+.nav-menu {
+  white-space: nowrap;
+  overflow-y: scroll;
+}
+
 .nav-menu-item {
   display: inline-block;
   font-size: 18px;

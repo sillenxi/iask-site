@@ -16,7 +16,7 @@ function Trainers() {
               <div className="trainer-item__name">{trainer.name}</div>
               <div className="trainer-item__position">
               {
-                trainer.position.map(item => <div>{item}</div>)
+                trainer.position.map(item => <div key={item}>{item}</div>)
               }
               </div>
               <img className="trainer-item__photo" src={trainer.photo} alt={trainer.name} />

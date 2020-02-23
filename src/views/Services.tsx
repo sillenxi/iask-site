@@ -1,6 +1,9 @@
 import React from 'react'
 import { Route, NavLink } from 'react-router-dom'
 import Lessons from './Lessons'
+import Certification from './services/CoachCertification'
+import BankSystem from './services/BankSystem'
+import OnlineService from './services/OnlineService'
 
 function Services() {
   return (
@@ -11,19 +14,22 @@ function Services() {
       </div>
       <div className="container mx-auto nav-menu">
         <div className="nav-menu-item">
+          <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="/services/certification">教练认证</NavLink>
+        </div>
+        <div className="nav-menu-item">
           <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="/services" exact>培训课程</NavLink>
         </div>
         <div className="nav-menu-item">
-          <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="lessons">学习项目</NavLink>
+          <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="/services/bank">银行体系</NavLink>
         </div>
         <div className="nav-menu-item">
-          <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="lessons">教练认证</NavLink>
-        </div>
-        <div className="nav-menu-item">
-          <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="lessons">在线服务</NavLink>
+          <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="/services/online">在线服务</NavLink>
         </div>
       </div>
-      <Route path="/services"><Lessons /></Route>
+      <Route path="/services" exact><Lessons /></Route>
+      <Route path="/services/certification"><Certification /></Route>
+      <Route path="/services/bank"><BankSystem /></Route>
+      <Route path="/services/online"><OnlineService /></Route>
     </div>
   )
 }

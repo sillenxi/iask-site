@@ -16,7 +16,7 @@ function TrainerModal(props: Props) {
 
   return (
     <div className="trainer-modal" onClick={handleMaskClick}>
-      <div className="trainer">
+      <div className="trainer" onClick={e => e.stopPropagation()}>
         <div className="trainer__photo">
           <img src={trainer.photo} alt={trainer.name}/>
         </div>

@@ -1,0 +1,38 @@
+.comp-bank-system {
+  .block {
+    &__title {
+      font-size: 32px;
+      font-weight: 500;
+    }
+    &__subtitle {
+      margin-top: 20px;
+      color: #ABA296;
+      font-size: 18px;
+    }
+    &__body {
+      margin-top: 60px;
+    }
+  }
+
+  .photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 585px * 2;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  .photo-item {
+    width: 585px;
+    height: 320px;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+  }
+}
