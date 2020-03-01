@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f55188f06b1f3c3237a03d8e80604736",
+    "revision": "665b3936461ae7af81892a1ee3d2bede",
     "url": "/iask-site/index.html"
   },
   {
-    "revision": "79eada3527d0ac4473b8",
+    "revision": "58ba7b2f2936e63ab1f2",
     "url": "/iask-site/static/css/2.fe245e99.chunk.css"
   },
   {
-    "revision": "339fdb7a2c9815c89285",
-    "url": "/iask-site/static/css/main.70e32021.chunk.css"
+    "revision": "a6d4e96e1d1d69e1b1cd",
+    "url": "/iask-site/static/css/main.8d982dfd.chunk.css"
   },
   {
-    "revision": "79eada3527d0ac4473b8",
-    "url": "/iask-site/static/js/2.fdc3fdd1.chunk.js"
+    "revision": "58ba7b2f2936e63ab1f2",
+    "url": "/iask-site/static/js/2.c24c8ac0.chunk.js"
   },
   {
     "revision": "86afaa925e0f432774bf95b19b6933fb",
-    "url": "/iask-site/static/js/2.fdc3fdd1.chunk.js.LICENSE"
+    "url": "/iask-site/static/js/2.c24c8ac0.chunk.js.LICENSE"
   },
   {
-    "revision": "339fdb7a2c9815c89285",
-    "url": "/iask-site/static/js/main.251b69e6.chunk.js"
+    "revision": "a6d4e96e1d1d69e1b1cd",
+    "url": "/iask-site/static/js/main.01597a0b.chunk.js"
   },
   {
     "revision": "a662a31562b978db611d",
@@ -34,6 +34,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fce8d1ea0495b9cc259fea5734be550e",
     "url": "/iask-site/static/media/book_demo.fce8d1ea.png"
+  },
+  {
+    "revision": "6edce1b9bf6aca06168e7fd36a3fba10",
+    "url": "/iask-site/static/media/cases_item_1.6edce1b9.png"
+  },
+  {
+    "revision": "e65bf9807bf3555e9b88c4a68c42955e",
+    "url": "/iask-site/static/media/cases_item_2.e65bf980.png"
+  },
+  {
+    "revision": "b68f16f7dc5db1e95b79d706cc1e1044",
+    "url": "/iask-site/static/media/cases_item_3.b68f16f7.png"
+  },
+  {
+    "revision": "6ea1916d87089944e722a2a53bee5cfb",
+    "url": "/iask-site/static/media/cases_item_4.6ea1916d.png"
   },
   {
     "revision": "08e3143b48ea0215acfda274b690a6cc",
