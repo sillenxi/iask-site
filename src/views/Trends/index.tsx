@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './index.scss'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Route } from 'react-router-dom'
+import Cases from './Cases'
+import News from '../News'
+import AccoladeModal from './components/AccoladeModal'
+
+export interface Acclaim {
+  name: string
+  position: string
+  comment: string
+}
 
 function Trends() {
-  const acclaimList = [
+  const acclaimList: Acclaim[] = [
     {
       name: '朱伟正',
       position: '《培训》杂志主编',
@@ -21,6 +30,15 @@ function Trends() {
     }
   ]
 
+  const [modalVisible, setModalVisible] = useState(false);
+  const [currentAcclaim, setCurrentAcclaim] = useState<Acclaim>(acclaimList[0]);
+
+  const handleAcclaimClick = (index: number) => () => {
+    console.log('sss', index);
+    setCurrentAcclaim(acclaimList[index]);
+    setModalVisible(true);
+  }
+
   return (
     <div>
       <div className="banner">
@@ -30,32 +48,46 @@ function Trends() {
       <div className="nav-menu-wrap">
         <nav className="container mx-auto nav-menu">
           <div className="nav-menu-item">
+            <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="/trends/cases" exact>项目案例</NavLink>
+          </div>
+          <div className="nav-menu-item">
             <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="/trends" exact>客户赞誉</NavLink>
           </div>
           <div className="nav-menu-item">
-            <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="/trends/company" exact>公司动态</NavLink>
+            <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="/trends/news" exact>公司动态</NavLink>
           </div>
         </nav>
       </div>
-      <div className="block">
-        <div className="block__head" data-content="Acclaim">客户赞誉</div>
-        <div className="block__body">
-          <div className="container mx-auto acclaim-list">
-          {
-            acclaimList.map((acclaim, index) => (
-              <div className="acclaim-item" key={index}>
-                <div className="flex items-baseline">
-                <div className="acclaim-item__man">{acclaim.name}</div>
-                  <div className="acclaim-item__position">{acclaim.position}</div>
+      <Route path="/trends/cases"><Cases /></Route>
+      <Route path="/trends" exact>
+        <div className="block">
+          <div className="block__head" data-content="Acclaim">客户赞誉</div>
+          <div className="block__body">
+            <div className="container mx-auto acclaim-list">
+            {
+              acclaimList.map((acclaim, index) => (
+                <div className="acclaim-item" key={index}
+                  onClick={handleAcclaimClick(index)}
+                >
+                  <div className="flex items-baseline">
+                  <div className="acclaim-item__man">{acclaim.name}</div>
+                    <div className="acclaim-item__position">{acclaim.position}</div>
+                  </div>
+                  <div className="acclaim-item__comment">{acclaim.comment}</div>
+                  <div className="acclaim-item__arrow"></div>
                 </div>
-                <div className="acclaim-item__comment">{acclaim.comment}</div>
-                <div className="acclaim-item__arrow"></div>
-              </div>
-            ))
-          }
+              ))
+            }
+            </div>
           </div>
         </div>
-      </div>
+      </Route>
+      <Route path="/trends/news"><News /></Route>
+      <AccoladeModal
+        visible={modalVisible}
+        data={currentAcclaim}
+        onMaskClick={() => setModalVisible(false)}
+      />
     </div>
   )
 }
