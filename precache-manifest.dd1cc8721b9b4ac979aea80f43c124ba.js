@@ -1,31 +1,67 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "665b3936461ae7af81892a1ee3d2bede",
+    "revision": "525ec3beadc205b401a7dd5401b5f75c",
     "url": "/iask-site/index.html"
   },
   {
-    "revision": "58ba7b2f2936e63ab1f2",
+    "revision": "8ff647c3b16dee351681",
     "url": "/iask-site/static/css/2.fe245e99.chunk.css"
   },
   {
-    "revision": "a6d4e96e1d1d69e1b1cd",
-    "url": "/iask-site/static/css/main.8d982dfd.chunk.css"
+    "revision": "229b95754e40f6323c46",
+    "url": "/iask-site/static/css/main.902b1322.chunk.css"
   },
   {
-    "revision": "58ba7b2f2936e63ab1f2",
-    "url": "/iask-site/static/js/2.c24c8ac0.chunk.js"
+    "revision": "8ff647c3b16dee351681",
+    "url": "/iask-site/static/js/2.50167cd6.chunk.js"
   },
   {
     "revision": "86afaa925e0f432774bf95b19b6933fb",
-    "url": "/iask-site/static/js/2.c24c8ac0.chunk.js.LICENSE"
+    "url": "/iask-site/static/js/2.50167cd6.chunk.js.LICENSE"
   },
   {
-    "revision": "a6d4e96e1d1d69e1b1cd",
-    "url": "/iask-site/static/js/main.01597a0b.chunk.js"
+    "revision": "229b95754e40f6323c46",
+    "url": "/iask-site/static/js/main.e8e43f9b.chunk.js"
   },
   {
     "revision": "a662a31562b978db611d",
     "url": "/iask-site/static/js/runtime-main.68273788.js"
+  },
+  {
+    "revision": "01552984a00004c8f2f3bcceee501f0a",
+    "url": "/iask-site/static/media/ai_fee.01552984.svg"
+  },
+  {
+    "revision": "7e030d767f80a6f3e79b42025c4d3538",
+    "url": "/iask-site/static/media/ai_method.7e030d76.svg"
+  },
+  {
+    "revision": "1f9a86f80531dac6211a66aef786c788",
+    "url": "/iask-site/static/media/ai_service.1f9a86f8.svg"
+  },
+  {
+    "revision": "10ee1154cfadeb926c1c61f6490541fa",
+    "url": "/iask-site/static/media/ai_skill.10ee1154.svg"
+  },
+  {
+    "revision": "27bddeaa68e5cfe2ff85a0cc8d053784",
+    "url": "/iask-site/static/media/ai_video_poster.27bddeaa.png"
+  },
+  {
+    "revision": "744493763680fa2710e0e3120ec247f7",
+    "url": "/iask-site/static/media/ai_worth_1.74449376.png"
+  },
+  {
+    "revision": "0edc8e7166c9ed3997c18bea43d2dca1",
+    "url": "/iask-site/static/media/ai_worth_2.0edc8e71.png"
+  },
+  {
+    "revision": "641e7ec998ac833a1decce1748734fa0",
+    "url": "/iask-site/static/media/ai_worth_3.641e7ec9.png"
+  },
+  {
+    "revision": "e3ddadbc399eefa3343d9aa19d59915c",
+    "url": "/iask-site/static/media/ai_worth_4.e3ddadbc.png"
   },
   {
     "revision": "20ed42e539e35cbeda28ecd727093e3c",
@@ -34,6 +70,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fce8d1ea0495b9cc259fea5734be550e",
     "url": "/iask-site/static/media/book_demo.fce8d1ea.png"
+  },
+  {
+    "revision": "b3360cbb7f76a68ca7b9eba5e73ef592",
+    "url": "/iask-site/static/media/book_sjzn.b3360cbb.png"
   },
   {
     "revision": "6edce1b9bf6aca06168e7fd36a3fba10",
@@ -168,6 +208,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iask-site/static/media/man_zhusha.bf66bc54.png"
   },
   {
+    "revision": "6d459038074c835e8fb2458d9d724009",
+    "url": "/iask-site/static/media/online_ai.6d459038.png"
+  },
+  {
+    "revision": "df10dfe480c3170a5aa9e06f8e74ed15",
+    "url": "/iask-site/static/media/online_one_to_one.df10dfe4.png"
+  },
+  {
     "revision": "57c2216b2c9b6c9cb8bb6e99edb961d3",
     "url": "/iask-site/static/media/partner_gjdw.57c2216b.png"
   },
@@ -238,34 +286,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7c58c98118c0daa23d89697fbed8c457",
     "url": "/iask-site/static/media/service_one_to_one.7c58c981.png"
-  },
-  {
-    "revision": "d67b1992f3ec9f8a3edea757475b0852",
-    "url": "/iask-site/static/media/service_online_1.d67b1992.png"
-  },
-  {
-    "revision": "71304835396acf69848fca268b2d9f6f",
-    "url": "/iask-site/static/media/service_online_2.71304835.png"
-  },
-  {
-    "revision": "db33703812222e42a3527a6f95fb399d",
-    "url": "/iask-site/static/media/service_online_3.db337038.png"
-  },
-  {
-    "revision": "38bcbc49cf2277d7540181c930bc0215",
-    "url": "/iask-site/static/media/service_online_4.38bcbc49.png"
-  },
-  {
-    "revision": "5697baf7b1a0d6e336f76630e9c10060",
-    "url": "/iask-site/static/media/service_online_5.5697baf7.png"
-  },
-  {
-    "revision": "d55056ab6645db13057cc46aae78dc42",
-    "url": "/iask-site/static/media/service_online_6.d55056ab.png"
-  },
-  {
-    "revision": "2e7b1cd6e6eb1c765af4e92ca8ff937e",
-    "url": "/iask-site/static/media/service_online_qrcode.2e7b1cd6.png"
   },
   {
     "revision": "d3a85a70230bdc2499d8e7940246b749",
