@@ -10,6 +10,7 @@ import Footer from './views/Footer';
 import Home from './views/Home';
 import About from './views/About';
 import Services from './views/Services';
+import SmartCoach from './views/services/SmartCoach';
 import Trends from './views/Trends';
 import NotFound from './views/404';
 
@@ -22,8 +23,9 @@ function App() {
           <Route path="/" exact><Home /></Route>
           <Route path="/about"><About /></Route>
           <Route path="/services"><Services /></Route>
+          <Route path="/smart-coach"><SmartCoach /></Route>
           <Route path="/trends"><Trends /></Route>
-          <Route><NotFound /></Route>
+          <Route path="*"><NotFound /></Route>
         </Switch>
         <Footer />
       </div>

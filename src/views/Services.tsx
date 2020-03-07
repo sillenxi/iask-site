@@ -1,11 +1,13 @@
 import React from 'react'
-import { Route, NavLink } from 'react-router-dom'
+import { Route, NavLink, Switch, useRouteMatch } from 'react-router-dom'
 import Lessons from './Lessons'
 import Certification from './services/CoachCertification'
 import BankSystem from './services/BankSystem'
 import OnlineService from './services/OnlineService'
 
 function Services() {
+  const { path, url } = useRouteMatch()
+
   return (
     <div>
       <div className="banner">
@@ -14,22 +16,24 @@ function Services() {
       </div>
       <div className="container mx-auto nav-menu">
         <div className="nav-menu-item">
-          <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="/services/certification">教练认证</NavLink>
+          <NavLink className="nav-menu-item__txt" activeClassName="is-active" to={`${url}/certification`}>教练认证</NavLink>
         </div>
         <div className="nav-menu-item">
-          <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="/services" exact>培训课程</NavLink>
+          <NavLink className="nav-menu-item__txt" activeClassName="is-active" to={url} exact>培训课程</NavLink>
         </div>
         <div className="nav-menu-item">
-          <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="/services/bank">银行体系</NavLink>
+          <NavLink className="nav-menu-item__txt" activeClassName="is-active" to={`${url}/bank`}>银行体系</NavLink>
         </div>
         <div className="nav-menu-item">
-          <NavLink className="nav-menu-item__txt" activeClassName="is-active" to="/services/online">在线服务</NavLink>
+          <NavLink className="nav-menu-item__txt" activeClassName="is-active" to={`${url}/online`}>在线服务</NavLink>
         </div>
       </div>
-      <Route path="/services" exact><Lessons /></Route>
-      <Route path="/services/certification"><Certification /></Route>
-      <Route path="/services/bank"><BankSystem /></Route>
-      <Route path="/services/online"><OnlineService /></Route>
+      <Switch>
+        <Route path={path} exact><Lessons /></Route>
+        <Route path={`${path}/certification`}><Certification /></Route>
+        <Route path={`${path}/bank`}><BankSystem /></Route>
+        <Route path={`${path}/online`}><OnlineService /></Route>
+      </Switch>
     </div>
   )
 }

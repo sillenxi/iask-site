@@ -1,0 +1,13 @@
+@import "../styles/variables.scss";
+
+.not-found {
+  padding-top: $header-height;
+  min-height: 300px;
+  text-align: center;
+  h2 {
+    margin-top: 100px;
+    font-weight: 600;
+    font-size: 50px;
+    color: #999;
+  }
+}

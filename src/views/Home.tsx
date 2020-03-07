@@ -1,9 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react'
+import classNames from 'classnames'
 import Slider from 'react-slick'
+import VideoModal from '../components/VideoModal'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './Home.scss'
-import classNames from 'classnames'
 import { serviceList } from '../data/services'
 import { projectList } from '../data/projects'
 
@@ -28,21 +29,8 @@ function Home() {
 
   const books = [
     { id: 1, name: '《行动教练：把员工带成干将》', author: '季益祥', img: require('../images/book_demo.png') },
-    { id: 2, name: '《行动教练实践指南》', author: '季益祥 蔡明', img: require('../images/book_demo.png') },
+    { id: 2, name: '《行动教练实践指南》', author: '季益祥 蔡明', img: require('../images/book_sjzn.png') },
   ]
-
-  const [modalVideoVisible, setModalVideoVisible] = useState(false)
-  const handleVideo = (action: string) => () => {
-    switch (action) {
-      case 'play':
-        setModalVideoVisible(true)
-        break
-      case 'stop':
-        setModalVideoVisible(false)
-        break
-      default:
-    }
-  }
 
   return (
     <div>
@@ -174,29 +162,12 @@ function Home() {
       <div className="block">
         <div className="block__head" data-content="STYLE">企业风采</div>
         <div className="block__body">
-          <figure className="container video-wrap">
-            <div className="video__poster"></div>
-            <div className="video__desc">
-              <div className="video__name">行动教练</div>
-              <div className="video__slogan">专注教练十二年</div>
-              <div className="video__arrow"></div>
-            </div>
-            <div className="video-btn__play" onClick={handleVideo('play')}></div>
-          </figure>
-          <div className={"modal-video " + (modalVideoVisible && 'visible')} onClick={handleVideo('stop')}>
-            <div className="modal-video__content">
-            {
-              modalVideoVisible &&
-              <video className="company__video"
-                autoPlay
-                controls
-                preload="metadata" poster={require('../images/video_poster.png')}>
-                <source src="http://www.coach.ac.cn/template/69/images/company.mp4" type="video/mp4" />
-                <p>抱歉，您的浏览器不支持嵌入视频</p>
-              </video>
-            }
-            </div>
-          </div>
+          <VideoModal
+            title="行动教练"
+            desc="专注教练十二年"
+            source="http://www.coach.ac.cn/template/69/images/company.mp4"
+            poster={require('../images/video_poster.png')}
+          />
         </div>
       </div>
     </div>
