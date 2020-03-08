@@ -5,6 +5,7 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import Header from './views/Header';
 import Footer from './views/Footer';
 import Home from './views/Home';
@@ -18,6 +19,7 @@ import NotFound from './views/404';
 function App() {
   return (
     <Router>
+      <ScrollToTop>
       <div className="App">
         <Header />
         <Switch>
@@ -31,6 +33,7 @@ function App() {
         </Switch>
         <Footer />
       </div>
+      </ScrollToTop>
     </Router>
   );
 }
