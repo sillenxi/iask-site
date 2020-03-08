@@ -103,8 +103,8 @@ function SmartCoach() {
         <div className="container mx-auto">
           <div className="text-center block__title">使用流程</div>
           <div className="text-center block__subtitle">[    性价比最高的绩效管理工具    ]</div>
-          <div className="block__content">
-            TODO 直接放图
+          <div className="block__content flow">
+            <img className="flow__img" src={require('../../../images/ai_flow.png')} alt="使用流程" />
           </div>
         </div>
       </div>

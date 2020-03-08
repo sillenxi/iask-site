@@ -106,6 +106,15 @@
   }
 }
 
+.flow {
+  margin-top: 46px;
+  &__img {
+    margin: 0 auto;
+    width: 1094px;
+    max-width: 100%;
+  }
+}
+
 .publicity-video {
   margin-top: 60px;
 }

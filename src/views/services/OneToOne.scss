@@ -35,8 +35,58 @@
     font-weight: 500;
     background-size: cover;
     background-position: center;
-    & + & {
-      margin-left: 45px;
+    margin-right: 45px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .pain {
+    &__content {
+      padding: 45px 40px;
+    }
+  }
+  .pain-item {
+    position: relative;
+    vertical-align: top;
+    width: 360px;
+    height: 204px;
+    border: 1px solid #F47E14;
+    text-align: center;
+    padding: 0 78px;
+    padding-top: 54px;
+    margin-right: 45px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &__title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    &__content {
+      margin-top: 29px;
+      color: #807970;
+      font-size: 14px;
+    }
+    &--down {
+      top: 117px;
+    }
+    &--up {
+      bottom: 117px;
+    }
+  }
+  .pain-type {
+    width: 280px;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    background-color: #F47E14;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 45px;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
