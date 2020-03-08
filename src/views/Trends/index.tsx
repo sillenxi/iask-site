@@ -41,7 +41,7 @@ function Trends() {
 
   return (
     <div>
-      <div className="banner">
+      <div className="banner banner-trends">
         <h2 className="text-4xl md:text-5xl banner__title">最新动态</h2>
         <div className="hidden md:block banner__desc">爱问（上海）管理咨询有限公司是一家专业的管理咨询和培训公司，致力于通过教练技术帮助中国企业提升领导力、培养人才、达成目标。</div>
       </div>
