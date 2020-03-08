@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "525ec3beadc205b401a7dd5401b5f75c",
+    "revision": "20b69f4d5b43cadde0d5533e541ce8c4",
     "url": "/iask-site/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iask-site/static/css/2.fe245e99.chunk.css"
   },
   {
-    "revision": "229b95754e40f6323c46",
-    "url": "/iask-site/static/css/main.902b1322.chunk.css"
+    "revision": "f0a71984bc48d9d42798",
+    "url": "/iask-site/static/css/main.0fcc0a1d.chunk.css"
   },
   {
     "revision": "8ff647c3b16dee351681",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iask-site/static/js/2.50167cd6.chunk.js.LICENSE"
   },
   {
-    "revision": "229b95754e40f6323c46",
-    "url": "/iask-site/static/js/main.e8e43f9b.chunk.js"
+    "revision": "f0a71984bc48d9d42798",
+    "url": "/iask-site/static/js/main.cd5d1ba7.chunk.js"
   },
   {
     "revision": "a662a31562b978db611d",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "01552984a00004c8f2f3bcceee501f0a",
     "url": "/iask-site/static/media/ai_fee.01552984.svg"
+  },
+  {
+    "revision": "d3e3a4f36f74de1660bb79d38a71637c",
+    "url": "/iask-site/static/media/ai_flow.d3e3a4f3.png"
   },
   {
     "revision": "7e030d767f80a6f3e79b42025c4d3538",
@@ -286,6 +290,34 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7c58c98118c0daa23d89697fbed8c457",
     "url": "/iask-site/static/media/service_one_to_one.7c58c981.png"
+  },
+  {
+    "revision": "d67b1992f3ec9f8a3edea757475b0852",
+    "url": "/iask-site/static/media/service_online_1.d67b1992.png"
+  },
+  {
+    "revision": "71304835396acf69848fca268b2d9f6f",
+    "url": "/iask-site/static/media/service_online_2.71304835.png"
+  },
+  {
+    "revision": "db33703812222e42a3527a6f95fb399d",
+    "url": "/iask-site/static/media/service_online_3.db337038.png"
+  },
+  {
+    "revision": "38bcbc49cf2277d7540181c930bc0215",
+    "url": "/iask-site/static/media/service_online_4.38bcbc49.png"
+  },
+  {
+    "revision": "5697baf7b1a0d6e336f76630e9c10060",
+    "url": "/iask-site/static/media/service_online_5.5697baf7.png"
+  },
+  {
+    "revision": "d55056ab6645db13057cc46aae78dc42",
+    "url": "/iask-site/static/media/service_online_6.d55056ab.png"
+  },
+  {
+    "revision": "2e7b1cd6e6eb1c765af4e92ca8ff937e",
+    "url": "/iask-site/static/media/service_online_qrcode.2e7b1cd6.png"
   },
   {
     "revision": "d3a85a70230bdc2499d8e7940246b749",
