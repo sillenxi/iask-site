@@ -57,6 +57,7 @@ const VideoModal = React.forwardRef<IRef, IProps>((props, ref) => {
             autoPlay
             controls
             preload="metadata"
+            crossOrigin="anonymous"
             { ...(props.poster ? { poster: props.poster } : {})}
           >
             <source src={props.source} type="video/mp4" />
