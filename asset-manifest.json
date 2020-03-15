@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/iask-site/static/css/main.e33cfa03.chunk.css",
-    "main.js": "/iask-site/static/js/main.71c1ea6f.chunk.js",
-    "main.js.map": "/iask-site/static/js/main.71c1ea6f.chunk.js.map",
+    "main.css": "/iask-site/static/css/main.9428d59a.chunk.css",
+    "main.js": "/iask-site/static/js/main.b2f97279.chunk.js",
+    "main.js.map": "/iask-site/static/js/main.b2f97279.chunk.js.map",
     "runtime-main.js": "/iask-site/static/js/runtime-main.68273788.js",
     "runtime-main.js.map": "/iask-site/static/js/runtime-main.68273788.js.map",
     "static/css/2.fe245e99.chunk.css": "/iask-site/static/css/2.fe245e99.chunk.css",
     "static/js/2.c4589f1c.chunk.js": "/iask-site/static/js/2.c4589f1c.chunk.js",
     "static/js/2.c4589f1c.chunk.js.map": "/iask-site/static/js/2.c4589f1c.chunk.js.map",
     "index.html": "/iask-site/index.html",
-    "precache-manifest.c0a486f11d302b64af8be16d4c84b547.js": "/iask-site/precache-manifest.c0a486f11d302b64af8be16d4c84b547.js",
+    "precache-manifest.5268c3de5a8f5855fd5673ce4b26dec8.js": "/iask-site/precache-manifest.5268c3de5a8f5855fd5673ce4b26dec8.js",
     "service-worker.js": "/iask-site/service-worker.js",
     "static/css/2.fe245e99.chunk.css.map": "/iask-site/static/css/2.fe245e99.chunk.css.map",
-    "static/css/main.e33cfa03.chunk.css.map": "/iask-site/static/css/main.e33cfa03.chunk.css.map",
+    "static/css/main.9428d59a.chunk.css.map": "/iask-site/static/css/main.9428d59a.chunk.css.map",
     "static/js/2.c4589f1c.chunk.js.LICENSE": "/iask-site/static/js/2.c4589f1c.chunk.js.LICENSE",
     "static/media/ai_fee.svg": "/iask-site/static/media/ai_fee.01552984.svg",
     "static/media/ai_flow.png": "/iask-site/static/media/ai_flow.d3e3a4f3.png",
@@ -26,6 +26,7 @@
     "static/media/ai_worth_4.png": "/iask-site/static/media/ai_worth_4.e3ddadbc.png",
     "static/media/About.scss": "/iask-site/static/media/banner_about.fc6ef7d2.png",
     "static/media/Home.scss": "/iask-site/static/media/video_icon_play.17a2a3e7.svg",
+    "static/media/Source.scss": "/iask-site/static/media/banner_source.ebd64c59.png",
     "static/media/book_demo.png": "/iask-site/static/media/book_demo.fce8d1ea.png",
     "static/media/book_sjzn.png": "/iask-site/static/media/book_sjzn.b3360cbb.png",
     "static/media/cases_item_1.png": "/iask-site/static/media/cases_item_1.6edce1b9.png",
@@ -103,16 +104,21 @@
     "static/media/service_system_9.png": "/iask-site/static/media/service_system_9.1b17d3bc.png",
     "static/media/service_talent.png": "/iask-site/static/media/service_talent.2e6cbbaf.png",
     "static/media/slick-theme.css": "/iask-site/static/media/slick.f97e3bbf.svg",
+    "static/media/source_book_1.png": "/iask-site/static/media/source_book_1.b62013e8.png",
+    "static/media/source_book_2.png": "/iask-site/static/media/source_book_2.8c97bee4.png",
+    "static/media/source_learn_1.png": "/iask-site/static/media/source_learn_1.cb24ee0f.png",
+    "static/media/source_learn_2.png": "/iask-site/static/media/source_learn_2.642396e6.png",
     "static/media/source_lesson.svg": "/iask-site/static/media/source_lesson.881c87c6.svg",
     "static/media/source_online.svg": "/iask-site/static/media/source_online.7a7e248b.svg",
     "static/media/source_publication.svg": "/iask-site/static/media/source_publication.1c8c68ee.svg",
+    "static/media/source_train.png": "/iask-site/static/media/source_train.1f386f56.png",
     "static/media/video_poster.png": "/iask-site/static/media/video_poster.4a653619.png"
   },
   "entrypoints": [
     "static/js/runtime-main.68273788.js",
     "static/css/2.fe245e99.chunk.css",
     "static/js/2.c4589f1c.chunk.js",
-    "static/css/main.e33cfa03.chunk.css",
-    "static/js/main.71c1ea6f.chunk.js"
+    "static/css/main.9428d59a.chunk.css",
+    "static/js/main.b2f97279.chunk.js"
   ]
 }

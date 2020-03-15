@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "79d8f775af8f9e6064269bf7f38fcc68",
+    "revision": "6516bae584814f9fc148ea49b6467e3b",
     "url": "/iask-site/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iask-site/static/css/2.fe245e99.chunk.css"
   },
   {
-    "revision": "6e4cefa3b95aa98865e9",
-    "url": "/iask-site/static/css/main.e33cfa03.chunk.css"
+    "revision": "9d3a319fd200a7cb7869",
+    "url": "/iask-site/static/css/main.9428d59a.chunk.css"
   },
   {
     "revision": "827d0d0ae9108316e711",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iask-site/static/js/2.c4589f1c.chunk.js.LICENSE"
   },
   {
-    "revision": "6e4cefa3b95aa98865e9",
-    "url": "/iask-site/static/js/main.71c1ea6f.chunk.js"
+    "revision": "9d3a319fd200a7cb7869",
+    "url": "/iask-site/static/js/main.b2f97279.chunk.js"
   },
   {
     "revision": "a662a31562b978db611d",
@@ -74,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8628c19088e49056fa743725aaa5b89b",
     "url": "/iask-site/static/media/banner_service.8628c190.png"
+  },
+  {
+    "revision": "ebd64c59f2fcdd32cd9b1496dc99f4a3",
+    "url": "/iask-site/static/media/banner_source.ebd64c59.png"
   },
   {
     "revision": "c69e8cd0fbab9171c412c50844864bb8",
@@ -412,6 +416,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iask-site/static/media/slider_arrow.756d6ad0.svg"
   },
   {
+    "revision": "b62013e8e93fb867760552492b50d2e2",
+    "url": "/iask-site/static/media/source_book_1.b62013e8.png"
+  },
+  {
+    "revision": "8c97bee4175de3622078a2f42d973562",
+    "url": "/iask-site/static/media/source_book_2.8c97bee4.png"
+  },
+  {
+    "revision": "cb24ee0f0b6d17c805cfc47a3512b61e",
+    "url": "/iask-site/static/media/source_learn_1.cb24ee0f.png"
+  },
+  {
+    "revision": "642396e6d8925843666e17fcf19d00a6",
+    "url": "/iask-site/static/media/source_learn_2.642396e6.png"
+  },
+  {
     "revision": "881c87c6f8c7a6578b2446a9e3ef4e41",
     "url": "/iask-site/static/media/source_lesson.881c87c6.svg"
   },
@@ -422,6 +442,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1c8c68eeb86c14137510da689b9c4301",
     "url": "/iask-site/static/media/source_publication.1c8c68ee.svg"
+  },
+  {
+    "revision": "1f386f56e7342aab2e55678ea5ac1249",
+    "url": "/iask-site/static/media/source_train.1f386f56.png"
   },
   {
     "revision": "243897c58336e3306e6d9eb00aee85be",
