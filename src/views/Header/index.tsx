@@ -37,7 +37,7 @@ function Header() {
             <li className="ml-12 lg:ml-20 menu-item"><Link to="/about">关于我们</Link></li>
             <li className="ml-12 lg:ml-20 menu-item"><Link to="/services">产品服务</Link></li>
             <li className="ml-12 lg:ml-20 menu-item"><Link to="/trends">最新动态</Link></li>
-            <li className="ml-12 lg:ml-20 menu-item"><Link to="/">学习资源</Link></li>
+            <li className="ml-12 lg:ml-20 menu-item"><Link to="/source">学习资源</Link></li>
           </ul>
         </nav>
       </div>

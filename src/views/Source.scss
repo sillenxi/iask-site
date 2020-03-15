@@ -1,0 +1,36 @@
+.banner-source {
+  background-image: url("../images/banner_source.png");
+}
+
+.publication-item {
+  margin-top: 60px;
+  display: flex;
+  &__cover {
+    width: 400px;
+    height: 300px;
+    background-color: #eee;
+    flex-shrink: 0;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__info {
+    margin-left: 70px;
+  }
+  &__name {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  &__author {
+    margin-top: 60px;
+    color: #666;
+    font-size: 16px;
+  }
+  &__intro {
+    margin-top: 13px;
+    color: #666;
+    font-size: 16px;
+  }
+}

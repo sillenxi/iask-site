@@ -14,6 +14,7 @@ import Services from './views/Services';
 import SmartCoach from './views/services/SmartCoach';
 import OneToOne from './views/services/OneToOne';
 import Trends from './views/Trends';
+import Source from './views/Source';
 import NotFound from './views/404';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/smart-coach"><SmartCoach /></Route>
           <Route path="/one-to-one"><OneToOne /></Route>
           <Route path="/trends"><Trends /></Route>
+          <Route path="/source"><Source /></Route>
           <Route path="*"><NotFound /></Route>
         </Switch>
         <Footer />
